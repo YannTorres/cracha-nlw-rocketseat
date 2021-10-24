@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  background: url(images/BackGround.svg) no-repeat center/cover;
+  background: url(images/Mobile.svg) no-repeat center/cover;
   width: 100vw;
   min-height: 812px;
   height: 100vh;
@@ -79,4 +79,34 @@ ul {
   gap: 0.5rem;
   justify-content: center;
   display: flex;
+}
+.break {
+  display: none;
+}
+.strip {
+  display: none;
+}
+
+.button img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+@media (min-width: 960px) {
+  main {
+    background: url(images/Mobile.svg);
+    width: 375px;
+    height: 812px;
+  }
+  .break {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .strip {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1.25rem;
+    z-index: 1;
+  }
 }
